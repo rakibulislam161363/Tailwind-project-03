@@ -10,12 +10,52 @@
 
   <!-- ! logho section -->
 
-  <section></section>
+  <section class="container flex justify-between items-center">
+    <!-- logho -->
+     <img class="md:w-32 h-10 md:h-12" src="image/c4u full logo_2022 1.png" alt="">
+     <!-- nav area -->
+
+     <nav class="hidden md:flex">
+      <ul class="flex gap-5">
+        <li class="hovereffect">Home</li>
+        <li class="text-[#F44335] hovereffect">About Us</li>
+        <li class="hovereffect">Upskill</li>
+        <li class="hovereffect">Contact us</li>
+      </ul>
+     </nav>
+
+    <div class="flex justify-center items-center gap-2">
+      <button class="bg-[#F44335] text-white px-3 md:px-5 py-1 rounded-lg hover:scale-110 transition-all delay-300">Register Interest</button>
+      <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" class="size-6 dark:stroke-white hover:scale-110 transition-all delay-300">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+      </button>
+      <button class="md:hidden" id="btn2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6 dark:stroke-white hover:scale-110 transition-all delay-300">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+
+      </button>
+    </div>
+    <nav class="absolute md:hidden top-14 justify-center items-center mx-auto left-0 right-0">
+      <ul id="ullink" class="-translate-x-full flex flex-col justify-center items-center gap-1 bg-[#F44335] text-white rounded-lg">
+        <li class="lilist">Home</li>
+        <li class="lilist">About Us</li>
+        <li class="lilist">Upskill</li>
+        <li class="lilist">Contact us</li>
+      </ul>
+    </nav>
+
+  </section>
 
 
 
 
-  <button id="btn">Darkmode</button>
+ 
   
 
 
@@ -30,7 +70,14 @@
     });
 
 
-    
+    const ullink = document.getElementById("ullink");
+    const btn2 = document.getElementById("btn2");
+
+
+    btn2.addEventListener("click", () => {
+
+      ullink.classList.toggle("open");
+    });
 
 
 
