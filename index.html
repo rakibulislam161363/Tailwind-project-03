@@ -12,11 +12,11 @@
 
   <section class="container flex justify-between items-center">
     <!-- logho -->
-     <img class="md:w-32 h-10 md:h-12" src="image/c4u full logo_2022 1.png" alt="">
+     <img class="px-1  py-1 dark:bg-white rounded-lg md:w-32 h-10 md:h-12" src="image/c4u full logo_2022 1.png" alt="">
      <!-- nav area -->
 
      <nav class="hidden md:flex">
-      <ul class="flex gap-5">
+      <ul class="flex gap-5 dark:text-white">
         <li class="hovereffect">Home</li>
         <li class="text-[#F44335] hovereffect">About Us</li>
         <li class="hovereffect">Upskill</li>
@@ -41,8 +41,8 @@
 
       </button>
     </div>
-    <nav class="absolute md:hidden top-14 justify-center items-center mx-auto left-0 right-0">
-      <ul id="ullink" class="-translate-x-full flex flex-col justify-center items-center gap-1 bg-[#F44335] text-white rounded-lg">
+    <nav class="absolute md:hidden top-12 justify-center items-center mx-auto left-0 right-0">
+      <ul id="ullink" class=" absolute top-[-1000px] transition-all delay-300 flex flex-col justify-center items-center gap-1 bg-[#F44335] text-white rounded-lg w-full">
         <li class="lilist">Home</li>
         <li class="lilist">About Us</li>
         <li class="lilist">Upskill</li>
@@ -51,6 +51,25 @@
     </nav>
 
   </section>
+  <!-- ! hero section -->
+   <section id="image" class="ml-[-10px]  md md:ml-[-20px] transition-all delay-300 relative">
+    <div class="relative">
+      <img class="relative" src="./image/edwin-andrade-4V1dC_eoCwg-unsplash 1.png" alt="">
+      <img class="absolute bottom-0 right-0 hidden md:flex" src="./image/Wave.png" alt="">
+      <div class="absolute top-3 md:top-10 left-0 right-0">
+        <p class="text-white text-center text-base md:text-lg">Discover <span class="text-[#F44335]">-</span>Interact <span>-</span> Engage</p>
+        <h1 class="text-center text-2xl md:text-4xl mt-2 md:pt-4 text-white">Connecting <span class="text-[#F44335]">talent</span> to <br> opportunity through <span class="text-[#F44335]">skills</span> </h1>
+        <p class="text-center text-white px-10 md:px-40 md:pt-5 pt-2 md:top-5 pb-2 md:pb-5 text-xs md:text-lg">We forster a skill-focussed environment enabling students to navigate their career with their self-paced learning
+        journey and businesses to gain market-ready talent.</p>
+        <button class="bg-white py-1 md:py-2 rounded-full flex justify-center mx-auto px-5 text-[#F44335] hover:bg-blue-500 hover:text-white">Ask questions</button>
+      
+      </div>
+    </div>
+
+    
+   </section>
+
+  
 
 
 
@@ -72,11 +91,13 @@
 
     const ullink = document.getElementById("ullink");
     const btn2 = document.getElementById("btn2");
+    const hero = document.getElementById("image");
 
 
     btn2.addEventListener("click", () => {
 
       ullink.classList.toggle("open");
+      hero.classList.toggle("hero");
     });
 
 

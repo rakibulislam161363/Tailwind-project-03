@@ -10,9 +10,12 @@
     @apply hover:bg-slate-400 w-full justify-center flex hover:text-black cursor-pointer py-1 
   }
   .open{
-    @apply translate-x-0 transition-all delay-500
+    @apply top-0 transition-all delay-300
   }
   .hovereffect{
     @apply hover:text-green-500 cursor-pointer
+  }
+  .hero{
+    @apply pt-[150px] transition-all delay-300
   }
 }
