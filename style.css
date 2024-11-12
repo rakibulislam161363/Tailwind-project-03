@@ -7,7 +7,7 @@
     @apply px-5 py-1
   }
   .lilist{
-    @apply hover:bg-slate-400 w-full justify-center flex hover:text-black cursor-pointer py-1 
+    @apply hover:bg-slate-400 w-full justify-center flex hover:text-black cursor-pointer py-1
   }
   .open{
     @apply top-0 transition-all delay-300
@@ -16,7 +16,7 @@
     @apply hover:text-green-500 cursor-pointer
   }
   .hero{
-    @apply pt-[150px] md:pt-0 transition-all delay-300
+    @apply pt-[140px] md:pt-0 transition-all delay-300
   }
   .textstyle{
     @apply text-center md:text-start dark:text-white mb-2
