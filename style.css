@@ -18,4 +18,7 @@
   .hero{
     @apply pt-[150px] md:pt-0 transition-all delay-300
   }
+  .textstyle{
+    @apply text-center md:text-start dark:text-white mb-2
+  }
 }
