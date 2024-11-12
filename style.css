@@ -16,6 +16,6 @@
     @apply hover:text-green-500 cursor-pointer
   }
   .hero{
-    @apply pt-[150px] transition-all delay-300
+    @apply pt-[150px] md:pt-0 transition-all delay-300
   }
 }
